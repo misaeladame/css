@@ -9,7 +9,10 @@ Regla CSS constra de 2 partes
 } 
 */
 
+/* Son mala práctica porque son bloqueantes a la hora de que el navegador lee esta  instruccion */
+/* @import url(otro-hoja.css); */
+
 h1 {
     color: orangered;
-    background-color: skyblue;
+    background-color: black;
 }
