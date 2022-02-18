@@ -1,10 +1,13 @@
 /* 
+Comentario en CSS
+
 Regla CSS constra de 2 partes
 1) selector
 2) Bloque de declaraciones: {
     atributo: valor;
     atributo-de-mas-dos-palabras: otro-valor;
-} */
+} 
+*/
 
 h1 {
     color: orangered;
