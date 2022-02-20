@@ -1,7 +1,7 @@
 /* 
 Comentario en CSS
 
-Regla CSS constra de 2 partes
+Regla CSS consta de 2 partes
 1) selector
 2) Bloque de declaraciones: {
     atributo: valor;
@@ -17,10 +17,47 @@ Links útiles:
     https://codeguide.co/
 */
 
-/* Son mala práctica porque son bloqueantes a la hora de que el navegador lee esta  instruccion */
-/* @import url(otro-hoja.css); */
+/* Son mala práctica porque son bloqueantes a la hora de que el navegador lee esta instruccion */
+@import url(otro-hoja.css);
 
 h1 {
-    color: orangered;
-    background-color: black;
+  color: orangered;
+  background-color: black;
+}
+
+/*
+Selectores Básicos
+    1) Etiquetas - son elementos html
+    2) Identificadores - atributo id - #
+    3) Clases - atributo class - .
+*/
+
+p {
+  color: midnightblue;
+}
+
+/* Dar estilos con Id se considera un AntiPatrón */
+#parrafo-dos {
+  background-color: skyblue;
+}
+
+/* Dar estilos con clases nos permite reutilizar nuestro código CSS */
+.bg-skyblue {
+  background-color: skyblue;
+}
+
+.bg-steelblue {
+  background-color: steelblue;
+}
+
+.text-20 {
+  font-size: 20px;
+}
+
+.text-32 {
+  font-size: 32px;
+}
+
+.text-white {
+  color: white;
 }
