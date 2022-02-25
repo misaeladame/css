@@ -268,3 +268,18 @@ https://developer.mozilla.org/es/docs/Web/CSS/Pseudoelementos
 .input-pseudoelementos::placeholder {
   color: rgb(26, 224, 26);
 }
+
+/* Agrupar selectores */
+.form-agrupar-selectores input[type="text"],
+.form-agrupar-selectores input[type="email"],
+.form-agrupar-selectores textarea {
+  color: white;
+  border-color: yellow;
+  border-width: 2px;
+  border-style: dashed;
+  background-color: black;
+  font-size: 20px;
+  /* El display: block; hace que cada uno de los elementos input esten en una linea diferente */
+  display: block;
+  width: 300px;
+}
