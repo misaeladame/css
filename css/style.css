@@ -132,6 +132,7 @@ Pseudoclases - Dan estilos dependiendo del contexto, posición o estado del elem
 https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes
 */
 
+/* Pseudoclases de Estado */
 .form-pseudoclases *:required {
   border-color: yellow;
 }
@@ -175,4 +176,52 @@ Orden de pseudoelementos de enlaces
 
 #temario-css:target {
   background-color: lightgreen;
+}
+
+/* Pseudoclases por posición y tipo */
+
+.lista-pseudoclases li:first-child {
+  color: green;
+}
+
+.lista-pseudoclases li:last-child {
+  color: violet;
+}
+
+.lista-pseudoclases li:nth-child(3) {
+  color: blue;
+}
+
+.lista-pseudoclases li:nth-child(4n) {
+  font-size: 20px;
+}
+
+.lista-pseudoclases li:nth-child(3n + 1) {
+  font-weight: bold;
+}
+
+/* even = par */
+.lista-pseudoclases li:nth-child(even) {
+  background-color: yellow;
+}
+
+/* odd = impar */
+.lista-pseudoclases li:nth-child(odd) {
+  background-color: orange;
+}
+
+.articulo-pseudoclases p:first-of-type {
+  background-color: pink;
+}
+
+.articulo-pseudoclases p:last-of-type {
+  background-color: pink;
+}
+
+.articulo-pseudoclases p:nth-of-type(3) {
+  background-color: fuchsia;
+}
+
+.articulo-pseudoclases *:not(p, .boton, #xd) {
+  background-color: beige;
 }
