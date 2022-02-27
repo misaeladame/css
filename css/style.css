@@ -283,3 +283,10 @@ https://developer.mozilla.org/es/docs/Web/CSS/Pseudoelementos
   display: block;
   width: 300px;
 }
+
+/*
+El Algoritmo de CSS: Es la forma en que el navegador aplica los estilos al documento HTML. Es vital entender este concepto para que entiendas como se aplican y en algunas ocasiones se sobreescriben las reglas CSS
+  1) La Cáscada
+  2) La Especificidad
+  3) La Herencia
+*/
