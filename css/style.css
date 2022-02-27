@@ -289,4 +289,12 @@ El Algoritmo de CSS: Es la forma en que el navegador aplica los estilos al docum
   1) La Cáscada
   2) La Especificidad
   3) La Herencia
+
+La Cáscada es el mecanismo en que el navegador aplica los estilos. Y toma en cuenta lo siguiente en este orden
+  1) El Origen del Código
+    - El User Agent (los estilos por defecto del navegador)
+    - Personalizaciones del usuario.
+    - Los estilos del autor.
+  2) La Especificidad del Selector
+  3) Orden de Aparición
 */
