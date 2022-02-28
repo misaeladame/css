@@ -304,6 +304,11 @@ La Especificidad es el peso que tienen un selector cuando hay conflicto de estil
   Identificadores-----------------------------0,1,0,0
   Estilos-------------------------------------1,0,0,0
   !important-------------------Rompe la especificidad
+
+La Herencia es la capacidad de un selector de obtener (heredar) los valores de sus ancestros más ceranos, para aplicarla se usa el valor inherit, si queremos evitarla podemos asignar otro valor o inicializar la propiedad en cuestión con el valor inicial
+
+  https://web.dev/learn/css/inheritance/#which-properties-are-inheritable
+
 */
 
 blockquote#cita-marco.cita-marco {
@@ -336,4 +341,17 @@ blockquote#cita-marco {
 
 .cita-marco {
   background-color: moccasin !important;
+  background-color: darkorange !important;
+  font-size: 32px;
+  border-style: dotted;
+  border-color: red;
+}
+
+.cita-marco cite {
+  background-color: pink;
+  background-color: inherit;
+  font-size: 20px;
+  font-size: initial;
+  border-style: inherit;
+  border-color: inherit;
 }
