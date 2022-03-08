@@ -113,7 +113,8 @@ Propiedad Display
 */
 
 .caja-none,
-.caja-linea-bloque {
+.caja-linea-bloque,
+.caja-hidden {
   background-color: darkolivegreen;
   color: white;
   width: 600px;
@@ -127,4 +128,21 @@ Propiedad Display
 
 .caja-none {
   display: none;
+}
+
+.caja-hidden {
+  /* visibility: visible;  */ /* Valor predeterminado */
+  visibility: hidden; /* No aparece el contenido pero conserva el espacio del contenido */
+}
+
+.overflow {
+  background-color: darkturquoise;
+  width: 200px;
+  height: 100px;
+  overflow: visible; /* Valor predeterminado */
+  overflow: hidden;
+  overflow: scroll;
+  overflow: auto;
+  /* overflow-y: scroll; */
+  /* overflow-x: scroll; */
 }
