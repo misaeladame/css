@@ -213,3 +213,14 @@ html {
 .clearfix {
   clear: both;
 }
+
+/* Colapso de Márgenes Verticales */
+.margin-collapse {
+  background-color: skyblue;
+}
+
+.margin-collapse section {
+  border: thin solid black;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
