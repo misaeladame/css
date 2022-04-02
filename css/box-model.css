@@ -222,5 +222,14 @@ html {
 .margin-collapse section {
   border: thin solid black;
   margin-top: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 16px; /* Solo utilizar uno al maquetar ya sea margin-top o         
+                          margin-bottom */
+}
+
+/* Adición de márgenes horizontales */
+.margin-collapse span {
+  display: inline-block;
+  margin-right: 16px;
+  margin-left: 16px;
+  border: thin solid black;
 }
