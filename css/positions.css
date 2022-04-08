@@ -29,3 +29,12 @@ Posicionamiento CSS
 
   Estás 5 propiedades no funcionan con el valor de static 
 */
+
+/* 
+static: Es el valor por defecto, significa que el elemento respeta el flujo del documento HTML, por lo que no se puede mover ni posicionar
+*/
+
+.static {
+  background-color: yellow;
+  position: static;
+}
