@@ -54,6 +54,45 @@ relative: El elemento conserva sus dimensiones y posición original en el flujo 
   right: 50px;
   top: -30px;
   left: -10px;
-  top: 300px;
+  top: 300px; /* top y left tienen mayor prioridad que bottom y right */
   left: 50px;
+}
+
+/*
+absolute: El elemento pierde sus dimensiones y posición original en el flujo del documento. Si se mueve puede tomar como referencia 2 elementos:
+  1) El primer ancestro con posicionamiento relativo
+  2) Sino encuentra un ancestro relativo, se mueve respecto del documento HTML
+*/
+
+.absolute {
+  background-color: tomato;
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  /* top: 0;
+  left: 0; */
+  right: 0;
+  bottom: 0;
+  /* top: 100px;
+  left: 100px; */
+}
+
+.relative-parent {
+  background-color: khaki;
+  position: relative;
+  width: 600px;
+  height: 50px;
+  top: 50px;
+  left: 50px;
+}
+
+.absolute-child {
+  background-color: lightcoral;
+  position: absolute;
+  /* left: 0;
+  top: 0; */
+  /* bottom: 0;
+  right: 0; */
+  top: -50px;
+  left: -30px;
 }
