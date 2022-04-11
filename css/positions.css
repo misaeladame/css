@@ -96,3 +96,18 @@ absolute: El elemento pierde sus dimensiones y posición original en el flujo de
   top: -50px;
   left: -30px;
 }
+
+/*
+fixed: El elemento pierde sus dimensiones y posición original en el flujo del documento. Si se mueve toma como referencia el documento HTML y queja fijo en la posición, cuando el scroll se mueva, el elemento no lo hará, queda fijo
+*/
+
+.fixed {
+  background-color: lightgreen;
+  position: fixed;
+  width: 300px;
+  height: 100px;
+  /* right: 20px;
+  bottom: 10px; */
+  top: 30px;
+  left: 400px;
+}
